@@ -1,0 +1,44 @@
+
+* {
+	font-family: JetBrains Mono Nerd Font;
+	font-size: 16px;
+  font-weight: 700;
+}
+
+/* ------------------------------------------------ */
+
+#waybar {
+	background-color: rgba(26,27,38, 0.5);
+  border-radius: 15px;
+  border: 2px solid steelblue;
+}
+
+/* ------------------------------------------------ */
+
+#workspaces button {
+	color: #bcbcbc;	
+	margin: 5px;
+	padding: 4px 18px;
+}
+
+/* ------------------------------------------------ */
+
+#workspaces button.active {
+	border: 2px solid rgba(200,200,200,1.0);
+  border-radius: 15px;
+}
+
+/* ------------------------------------------------ */
+
+#tray, #pulseaudio, #network, #backlight, #battery, #clock, #mpd, #memory {
+	margin: 5px 25px;
+}
+
+/* ------------------------------------------------ */
+
+#battery.warning {
+  color: red;
+}
+#battery.charging {
+  color: lime;
+}

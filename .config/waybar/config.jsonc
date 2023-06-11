@@ -1,0 +1,96 @@
+{
+  "layer": "top",
+  "margin": 5,
+  // "spacing": 35,
+  "modules-left": ["wlr/workspaces"],
+  "modules-center": ["hyprland/window"], 
+  "modules-right": ["tray", "pulseaudio", "network", "battery", "clock"],
+
+  "wlr/workspaces": {
+    "on-click": "activate",
+    "format": "{icon}",
+    "format-icons": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "default": "1"
+      },
+    },
+
+  "clock": {
+    "format": "<span>{:     %H:%M\n<small>%a - %d %b</small>}</span>",
+    "align": 1,
+    "interval": 1, 
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+  },
+
+  "mpd": {
+    "format": "{stateIcon} {title}",
+    "state-icons": {
+      "playing": "♪",
+      "paused": "",
+    },
+    "format-stopped": "No music playing",
+    //"max-length": 15,
+    "interval": 10, 
+    "exec": "mpc current",
+    "exec-if": "pgrep mpd",
+    "on-click-right": "mpc toggle",
+    "on-click": "pkill ncmpcpp || footclient -e ncmpcpp"
+  },
+
+  "tray": {
+    "icon-size": 18,
+    "spacing": 4
+  },
+  "backlight": {
+    "format": "{icon}",
+    "format-alt": "{percent}%",
+    // "format-icons": ["", "", "", "", "", "", "", "", ""]
+    "format-icons": ["", "", "", "", "", "", ""]
+  },
+  "battery": {
+    "states": {
+        "warning": 25,
+    },
+    "format": "{icon} {capacity}%{time}",
+    "format-time": " - {H}h{M}m", 
+    "format-icons": ["󰂃", "󰁼", "󰁾", "󰁹"],
+  },
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "on-click":"switch_audio_output",
+    "format-muted": "󰝟",
+    "format-bluetooth": " {volume}%",
+    "align": 0,
+    "format-icons": {
+      "default": ["", "", ""]
+    },
+  },
+  "network": {
+    "format-wifi": "{icon}",
+    "format-ethernet": "{icon}",
+    "format-disconnected": "{icon}",
+    "format-alt": "{ipaddr}/{cidr}",
+    // "align": 0.5,
+    // "interval": 1,
+    // "format-alt": "{ipaddr}/{cidr}",
+    "tooltip-format": "{essid}/{ipaddr}",
+    "format-icons": {
+      "wifi": "",
+      "ethernet": "󰈁",
+      "disconnected": "󰖪"
+    }
+  },
+
+  "memory":{
+    "format":"{percentage}%",
+    "interval": 3,
+  }
+}
