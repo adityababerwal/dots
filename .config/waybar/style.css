@@ -1,37 +1,53 @@
-
 * {
-	font-family: JetBrains Mono Nerd Font;
-	font-size: 16px;
+  font-family: JetBrains Mono Nerd Font;
+  font-size: 20px;
   font-weight: 700;
 }
 
 /* ------------------------------------------------ */
 
 #waybar {
-	background-color: rgba(26,27,38, 0.5);
+  /* background-color: rgba(26, 27, 38, 1); */
+  background-color: rgba(1, 22, 39, 0.5);
   border-radius: 15px;
-  border: 2px solid steelblue;
 }
 
 /* ------------------------------------------------ */
+#workspaces {
+  background-color: rgba(1, 22, 39, 0.5);
+  border-radius: 15px;
+  margin: 5px;
+}
 
 #workspaces button {
-	color: #bcbcbc;	
-	margin: 5px;
-	padding: 4px 18px;
+  color: #bcbcbc;
+  /* margin: 0px 0px; */
+  /* background-color: rgba(56, 57, 68, 1); */
 }
 
 /* ------------------------------------------------ */
 
 #workspaces button.active {
-	border: 2px solid rgba(200,200,200,1.0);
-  border-radius: 15px;
+  /* border: 2px solid rgba(200, 200, 200, 1); */
+  /* border-radius: 15px; */
+  color: red;
 }
 
 /* ------------------------------------------------ */
 
-#tray, #pulseaudio, #network, #backlight, #battery, #clock, #mpd, #memory {
-	margin: 5px 25px;
+#tray,
+#pulseaudio,
+#network,
+#backlight,
+#battery,
+#mpd,
+#clock,
+#memory {
+  margin: 5px 5px;
+  padding: 6px 0px;
+  /* background-color: rgba(56, 57, 68, 1); */
+  background-color: rgba(1, 22, 39, 0.5);
+  border-radius: 15px;
 }
 
 /* ------------------------------------------------ */
@@ -42,3 +58,14 @@
 #battery.charging {
   color: lime;
 }
+
+/* ------------------------------------------------ */
+
+#clock {
+  font-size: 25px;
+}
+/* ------------------------------------------------ */
+#clock.day {
+  font-size: 15px;
+}
+/* ------------------------------------------------ */

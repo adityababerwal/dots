@@ -1,44 +1,73 @@
 {
   "layer": "top",
-  "margin": 5,
+  "margin": 3,
+  "position": "left",
+  "width": 50,
   // "spacing": 35,
-  "modules-left": ["wlr/workspaces"],
-  "modules-center": ["hyprland/window"], 
-  "modules-right": ["tray", "pulseaudio", "network", "battery", "clock"],
+  "modules-center": ["wlr/workspaces"],
+  "modules-left": ["clock", "clock#day"],
+  "modules-right": ["tray", "pulseaudio", "network", "battery"],
 
   "wlr/workspaces": {
     "on-click": "activate",
     "format": "{icon}",
     "format-icons": {
-        "1": "1",
-        "2": "2",
-        "3": "3",
-        "4": "4",
-        "5": "5",
-        "6": "6",
-        "7": "7",
-        "8": "8",
-        "9": "9",
-        "default": "1"
-      },
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9",
+      "default": "1"
     },
+    "persistent_workspaces": {
+      "1": [],
+      "2": [],
+      "3": []
+    }
+  },
 
   "clock": {
-    "format": "<span>{:     %H:%M\n<small>%a - %d %b</small>}</span>",
-    "align": 1,
-    "interval": 1, 
-    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    "format": "{:%H\n%M}",
+    "interval": 1
+  },
+
+  "clock#day": {
+    "format": "{:%a\n %d\n%b}",
+    "tooltip-format": "<tt><small>{calendar}</small></tt>",
+    "calendar": {
+      "mode": "month",
+      "on-scroll": -1,
+      "on-click-right": "mode",
+      "format": {
+        "months": "<span color='#ffead3'><b>{}</b></span>",
+        "days": "<span color='#ecc6d9'><b>{}</b></span>",
+        "weeks": "<span color='#99ffdd'><b>W{}</b></span>",
+        "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+        "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
+      }
+    },
+    "actions": {
+      "on-click-right": "mode",
+      "on-click-forward": "tz_up",
+      "on-click-backward": "tz_down",
+      "on-scroll-up": "shift_up",
+      "on-scroll-down": "shift_down"
+    }
   },
 
   "mpd": {
     "format": "{stateIcon} {title}",
     "state-icons": {
       "playing": "♪",
-      "paused": "",
+      "paused": ""
     },
     "format-stopped": "No music playing",
     //"max-length": 15,
-    "interval": 10, 
+    "interval": 10,
     "exec": "mpc current",
     "exec-if": "pgrep mpd",
     "on-click-right": "mpc toggle",
@@ -57,28 +86,29 @@
   },
   "battery": {
     "states": {
-        "warning": 25,
+      "warning": 25
     },
-    "format": "{icon} {capacity}%{time}",
-    "format-time": " - {H}h{M}m", 
+    "format": "{icon}",
     "format-icons": ["󰂃", "󰁼", "󰁾", "󰁹"],
+    "tooltip-format": "{capacity}%"
   },
   "pulseaudio": {
-    "format": "{icon} {volume}%",
-    "on-click":"switch_audio_output",
+    "format": "{icon}",
+    "on-click": "switch_audio_output",
     "format-muted": "󰝟",
-    "format-bluetooth": " {volume}%",
-    "align": 0,
+    "format-bluetooth": "",
+    "align": 0.5,
+    "tooltip-format": "{volume}%",
     "format-icons": {
       "default": ["", "", ""]
-    },
+    }
   },
   "network": {
     "format-wifi": "{icon}",
     "format-ethernet": "{icon}",
     "format-disconnected": "{icon}",
     "format-alt": "{ipaddr}/{cidr}",
-    // "align": 0.5,
+    "align": 0.35,
     // "interval": 1,
     // "format-alt": "{ipaddr}/{cidr}",
     "tooltip-format": "{essid}/{ipaddr}",
@@ -89,8 +119,8 @@
     }
   },
 
-  "memory":{
-    "format":"{percentage}%",
-    "interval": 3,
+  "memory": {
+    "format": "{percentage}%",
+    "interval": 3
   }
 }
