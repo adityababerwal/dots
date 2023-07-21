@@ -8,8 +8,10 @@ local plugins = {
 
 				"clangd",
 				"clang-format",
+				"codelldb",
 
 				"rust-analyzer",
+				"rustfmt",
 
 				"pyright",
 				"mypy",
@@ -61,13 +63,13 @@ local plugins = {
 				require("custom.configs.null-ls")
 			end,
 		},
-
 		config = function()
 			require("plugins.configs.lspconfig")
 			require("custom.configs.lspconfig")
 		end,
 	},
 
+	-- Just vimwiki
 	{
 		"vimwiki/vimwiki",
 		lazy = false,

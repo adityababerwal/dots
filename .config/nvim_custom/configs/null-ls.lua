@@ -10,12 +10,12 @@ local sources = {
 	formatting.stylua,
 	formatting.prettierd,
 
+	formatting.rustfmt,
+
 	lint.mypy,
 	lint.ruff,
 
 	lint.shellcheck,
-
-	lint.cpplint,
 }
 
 null_ls.setup({
