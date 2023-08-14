@@ -1,7 +1,6 @@
 #!/bin/sh
 
-buds_mac="F2:C6:5C:E1:40:0D"
-buds_sink="bluez_output.F2_C6_5C_E1_40_0D.a2dp-sink"
+buds_mac="98:67:2E:DF:C8:66"
 
 if [ "$(bluetoothctl devices Connected)" = "" ];
 then
