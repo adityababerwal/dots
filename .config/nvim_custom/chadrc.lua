@@ -39,5 +39,5 @@ M.ui = {
 	},
 }
 M.plugins = "custom.plugins"
--- M.mappings = require("custom.mappings")
+M.mappings = require("custom.mappings")
 return M

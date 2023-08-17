@@ -1,4 +1,5 @@
 local plugins = {
+	-- Mason
 	{
 		"williamboman/mason.nvim",
 		opts = {
@@ -8,15 +9,14 @@ local plugins = {
 
 				"clangd",
 				"clang-format",
-				"codelldb",
 
 				"rust-analyzer",
 				"rustfmt",
 
 				"pyright",
+				"black",
 				"mypy",
 				"ruff",
-				"black",
 
 				"stylua",
 
@@ -26,6 +26,7 @@ local plugins = {
 			},
 		},
 	},
+	-- Treesitter
 	{
 		"nvim-treesitter/nvim-treesitter",
 		opts = {

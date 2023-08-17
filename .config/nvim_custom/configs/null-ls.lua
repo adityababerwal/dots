@@ -6,14 +6,14 @@ local lint = null_ls.builtins.diagnostics
 
 local sources = {
 	formatting.black,
+
 	formatting.clang_format,
+
 	formatting.stylua,
+
 	formatting.prettierd,
 
 	formatting.rustfmt,
-
-	lint.mypy,
-	lint.ruff,
 
 	lint.shellcheck,
 }
