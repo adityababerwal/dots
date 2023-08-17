@@ -21,8 +21,6 @@
 
 #workspaces button {
   color: #bcbcbc;
-  /* margin: 0px 0px; */
-  /* background-color: rgba(56, 57, 68, 1); */
 }
 
 /* ------------------------------------------------ */
@@ -31,6 +29,10 @@
   /* border: 2px solid rgba(200, 200, 200, 1); */
   /* border-radius: 15px; */
   color: red;
+}
+
+#workspaces button:hover {
+  border-radius: 15px;
 }
 
 /* ------------------------------------------------ */
@@ -42,6 +44,7 @@
 #battery,
 #mpd,
 #clock,
+#bluetooth,
 #memory {
   margin: 5px 5px;
   padding: 6px 0px;
@@ -69,3 +72,15 @@
   font-size: 15px;
 }
 /* ------------------------------------------------ */
+#pulseaudio.good {
+  color: lightgreen;
+}
+#pulseaudio.moderate {
+  color: yellow;
+}
+#pulseaudio.high {
+  color: orange;
+}
+#pulseaudio.vhigh {
+  color: red;
+}

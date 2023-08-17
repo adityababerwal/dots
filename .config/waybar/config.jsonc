@@ -3,10 +3,11 @@
   "margin": 3,
   "position": "left",
   "width": 50,
+  "exclusive": false,
   // "spacing": 35,
   "modules-center": ["wlr/workspaces"],
   "modules-left": ["clock", "clock#day"],
-  "modules-right": ["tray", "pulseaudio", "network", "battery"],
+  "modules-right": ["tray", "pulseaudio", "bluetooth", "network", "battery"],
 
   "wlr/workspaces": {
     "on-click": "activate",
@@ -101,7 +102,17 @@
     "tooltip-format": "{volume}%",
     "format-icons": {
       "default": ["", "", ""]
+    },
+    "states": {
+      "good": 60,
+      "moderate": 80,
+      "high": 100,
+      "vhigh": 200
     }
+  },
+  "bluetooth": {
+    "format-connected-battery": "{device_battery_percentage}%",
+    "format-off": ""
   },
   "network": {
     "format-wifi": "{icon}",
