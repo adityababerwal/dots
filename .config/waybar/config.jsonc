@@ -89,7 +89,8 @@
     "states": {
       "warning": 25
     },
-    "format": "{icon}",
+    "format": "{capacity}",
+    "align": 0.5,
     "format-icons": ["󰂃", "󰁼", "󰁾", "󰁹"],
     "tooltip-format": "{capacity}%"
   },
