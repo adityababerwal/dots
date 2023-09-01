@@ -2,7 +2,10 @@
 local M = {}
 M.ui = {
 	theme = "nightowl",
-	transparency = true,
+	hl_override = {
+		Comment = { italic = true },
+	},
+	transparency = false,
 
 	statusline = {
 		theme = "vscode_colored",

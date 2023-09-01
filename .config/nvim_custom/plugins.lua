@@ -11,7 +11,6 @@ local plugins = {
 				"clang-format",
 
 				"rust-analyzer",
-				"rustfmt",
 
 				"pyright",
 				"black",
@@ -60,6 +59,7 @@ local plugins = {
 
 		dependencies = {
 			"jose-elias-alvarez/null-ls.nvim",
+			event = "VeryLazy",
 			config = function()
 				require("custom.configs.null-ls")
 			end,
