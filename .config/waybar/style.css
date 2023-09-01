@@ -1,4 +1,5 @@
 * {
+  all: unset; /*this is really important to isolate waybar from gtk*/
   font-family: JetBrains Mono Nerd Font;
   font-size: 20px;
   font-weight: 700;
@@ -56,11 +57,11 @@
 /* ------------------------------------------------ */
 #battery {
   background: url("./battery.png");
-  background-size: 85%;
+  background-size: 80%;
   background-repeat: no-repeat;
   background-position: center;
   color: black;
-  font-size: 13px;
+  font-size: 10px;
   padding: 5px;
 }
 
@@ -68,7 +69,7 @@
   color: red;
 }
 #battery.charging {
-  color: lime;
+  color: green;
 }
 
 /* ------------------------------------------------ */
