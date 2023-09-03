@@ -1,5 +1,0 @@
-#!/bin/sh
-
-while true; do
-  footclient -T lf -e lf;
-done
