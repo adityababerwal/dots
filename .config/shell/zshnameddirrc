@@ -1,13 +1,13 @@
 hash -d cac=/home/aditya/.cache 
 hash -d cf=/home/aditya/.config 
-hash -d D=/home/aditya/Downloads 
+hash -d D=/home/aditya/downloads 
 hash -d d=/home/aditya/Documents 
 hash -d dt=/home/aditya/.local/share 
 hash -d rr=/home/aditya/.local/src 
 hash -d h=/home/aditya 
 hash -d m=/home/aditya/Music 
 hash -d mn=/mnt 
-hash -d pp=/home/aditya/Pictures 
+hash -d pp=/home/aditya/pix 
 hash -d sc=/home/aditya/.local/bin 
 hash -d src=/home/aditya/.local/src 
 hash -d vv=/home/aditya/Videos 

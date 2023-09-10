@@ -32,9 +32,10 @@
   color: red;
 }
 
-#workspaces button:hover {
-  border-radius: 15px;
-}
+/* #workspaces button:hover { */
+/*   border-radius: 15px; */
+/*   background: white; */
+/* } */
 
 /* ------------------------------------------------ */
 

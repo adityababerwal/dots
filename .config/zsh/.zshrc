@@ -2,7 +2,8 @@
 autoload -U colors && colors	# Load colors
 # PS1="%B%{$fg[magenta]%}╭─%{$fg[green]%}%n %{$fg[red]%}in %{$fg[cyan]%}%~
 # %{$fg[magenta]%}╰────%b "
-PS1="%B%{$fg[blue]%}%~ %{$fg[red]%}%{$fg[green]%}%{$fg[blue]%}%b "
+PS1="%{$fg[blue]%}%~ %{$fg[red]%}%{$fg[green]%}%{$fg[blue]%} "
+RPS1="%T %D{%a %d %b}"
 setopt autocd		# Automatically cd into typed directory.
 stty stop undef		# Disable ctrl-s to freeze terminal.
 setopt interactive_comments
@@ -24,7 +25,9 @@ autoload -Uz +X bashcompinit && bashcompinit
 # vi mode
 bindkey -v
 export KEYTIMEOUT=1
-export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+# export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+# export PAGER=vimpager
+# export MANPAGER=vimpager
 
 bindkey -s '^o' 'lfcd\n'
 bindkey -s '^w' 'open_with_mpv\n'
@@ -40,5 +43,6 @@ bindkey '^e' edit-command-line
 # eval $(starship init zsh)
 
 # Load syntax highlighting; should be last.
-source /home/aditya/.config/zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh
+# source /home/aditya/.config/zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh 2>/dev/null
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh 2>/dev/null

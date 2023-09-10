@@ -1,4 +1,4 @@
-#!bin/sh
+#!/bin/sh
 
 # Use neovim for vim if present.
 [ -x "$(command -v nvim)" ] && alias vim="nvim" vimdiff="nvim -d"
@@ -24,7 +24,8 @@ alias \
   rsync="rsync -r --progress" \
   aria2c="aria2c -j 16 -s 16 -x 16 -k 5M" \
   dot="/usr/bin/git --git-dir=$HOME/.dots/ --work-tree=$HOME" \
-  matlab="matlab -desktop -softwareopengl"
+  mpvpaper="mpvpaper --fork --auto-pause eDP-1" \
+  sysupgrade="paru -Syu --sudoloop --noconfirm" \
 # Colorize commands when possible.
 alias \
 	ls="ls -hN --color=auto --group-directories-first" \
