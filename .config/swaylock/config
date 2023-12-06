@@ -1,0 +1,7 @@
+indicator
+clock
+daemonize
+ignore-empty-password
+screenshots
+effect-blur=9x5
+time-effects
