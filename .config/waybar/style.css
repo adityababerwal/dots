@@ -1,6 +1,6 @@
 * {
   all: unset; /*this is really important to isolate waybar from gtk*/
-  font-family: JetBrains Mono Nerd Font;
+  font-family: JetBrainsMono NF;
   font-size: 20px;
   font-weight: 700;
 }
@@ -9,13 +9,14 @@
 
 #waybar {
   /* background-color: rgba(26, 27, 38, 1); */
-  background-color: rgba(1, 22, 39, 0.5);
+  background-color: rgba(1, 22, 39, 0.9);
+  /* background-color: rgba(1, 22, 39, 1.0); */
   border-radius: 15px;
 }
 
 /* ------------------------------------------------ */
 #workspaces {
-  background-color: rgba(1, 22, 39, 0.5);
+  /* background-color: rgba(1, 22, 39, 0.5); */
   border-radius: 15px;
   margin: 5px;
 }
@@ -51,32 +52,24 @@
   margin: 5px 5px;
   /* padding: 6px 0px; */
   /* background-color: rgba(56, 57, 68, 1); */
-  background-color: rgba(1, 22, 39, 0.5);
+  /* background-color: rgba(1, 22, 39, 0.5); */
   border-radius: 15px;
 }
 
 /* ------------------------------------------------ */
-#battery {
-  background: url("./battery.png");
-  background-size: 80%;
-  background-repeat: no-repeat;
-  background-position: center;
-  color: black;
-  font-size: 10px;
-  padding: 5px;
-}
 
 #battery.warning {
   color: red;
 }
 #battery.charging {
-  color: green;
+  background-color: green;
 }
 
 /* ------------------------------------------------ */
 
 #clock {
   font-size: 25px;
+  border-radius: unset;
 }
 /* ------------------------------------------------ */
 #clock.day {
