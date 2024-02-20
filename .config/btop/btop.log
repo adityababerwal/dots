@@ -34,3 +34,43 @@
 
 2023/06/04 (14:57:43) | ===> btop++ v.1.2.13
 2023/06/04 (14:57:43) | WARNING: Failed to get disk/partition stats for mount "/run/user/1000/doc" with statvfs64 error code: 1. Ignoring...
+
+2023/08/27 (16:02:22) | ===> btop++ v.1.2.13
+2023/08/27 (16:02:22) | ERROR: Exception in runner thread -> Mem:: -> key not found
+
+2023/09/18 (02:36:41) | ===> btop++ v.1.2.13
+2023/09/18 (02:36:41) | ERROR: Stall in Runner thread, restarting!
+2023/09/18 (02:36:46) | WARNING: Failed to join _runner thread on exit!
+
+2023/09/19 (00:19:56) | ===> btop++ v.1.2.13
+2023/09/19 (00:19:56) | ERROR: Stall in Runner thread, restarting!
+2023/09/19 (00:20:01) | ERROR: Stall in Runner thread, restarting!
+2023/09/19 (00:20:56) | ERROR: Stall in Runner thread, restarting!
+2023/09/19 (00:21:01) | ERROR: Stall in Runner thread, restarting!
+2023/09/19 (00:21:56) | ERROR: Stall in Runner thread, restarting!
+2023/09/19 (00:22:01) | ERROR: Stall in Runner thread, restarting!
+2023/09/19 (00:23:57) | ERROR: Stall in Runner thread, restarting!
+2023/09/19 (00:24:02) | ERROR: Stall in Runner thread, restarting!
+
+2023/09/19 (00:40:03) | ===> btop++ v.1.2.13
+2023/09/19 (00:40:03) | ERROR: Stall in Runner thread, restarting!
+2023/09/19 (00:40:08) | ERROR: Stall in Runner thread, restarting!
+
+2023/09/19 (00:41:03) | ===> btop++ v.1.2.13
+2023/09/19 (00:41:03) | ERROR: Stall in Runner thread, restarting!
+2023/09/19 (00:41:09) | ERROR: Stall in Runner thread, restarting!
+2023/09/19 (00:41:14) | ERROR: Stall in Runner thread, restarting!
+2023/09/19 (00:41:19) | ERROR: Stall in Runner thread, restarting!
+2023/09/19 (00:42:03) | ERROR: Stall in Runner thread, restarting!
+2023/09/19 (00:42:09) | ERROR: Stall in Runner thread, restarting!
+2023/09/19 (00:42:14) | ERROR: Stall in Runner thread, restarting!
+2023/09/19 (00:42:19) | ERROR: Stall in Runner thread, restarting!
+2023/09/19 (00:42:25) | ERROR: Stall in Runner thread, restarting!
+2023/09/19 (00:42:30) | ERROR: Stall in Runner thread, restarting!
+2023/09/19 (00:42:35) | ERROR: Stall in Runner thread, restarting!
+2023/09/19 (00:42:41) | ERROR: Stall in Runner thread, restarting!
+2023/09/19 (00:43:04) | ERROR: Stall in Runner thread, restarting!
+2023/09/19 (00:43:09) | ERROR: Stall in Runner thread, restarting!
+2023/09/19 (00:44:03) | ERROR: Stall in Runner thread, restarting!
+2023/09/19 (00:44:09) | ERROR: Stall in Runner thread, restarting!
+2023/09/19 (00:44:14) | ERROR: Stall in Runner thread, restarting!

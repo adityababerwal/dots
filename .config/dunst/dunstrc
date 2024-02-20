@@ -1,7 +1,7 @@
 [global]
 
     monitor = 0
-    font = SauceCodePro Nerd Font 14
+    font = SauceCodePro NFM 14
     ### Geometry ###
     width = 300
     height = 300
@@ -148,4 +148,4 @@
     frame_color = "#ff0000"
     timeout = 5
     # Icon for notifications with critical urgency, uncomment to enable
-    icon = /home/aditya/.config/dunst/critical.png
+    # icon = /home/aditya/.config/dunst/critical.png

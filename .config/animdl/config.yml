@@ -1,6 +1,0 @@
-default_provider: animepahe
-quality_string: best[subtitle]/best
-fzf:
-  executable: fzf
-  opts: []
-  state: true
